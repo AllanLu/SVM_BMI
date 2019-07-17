@@ -17,15 +17,19 @@ svcrbf.fit(xtrain,ytrain)
 svcpoly.fit(xtrain,ytrain)
 svcsig.fit(xtrain,ytrain)
 
+# 0.952 0.948
 print(lsvc.score(xtrain,ytrain))
 print(lsvc.score(xtest,ytest))
 
+# 0.999 0.999
 print(svcrbf.score(xtrain,ytrain))
 print(svcrbf.score(xtest,ytest))
 
+# 0.945 0.936
 print(svcpoly.score(xtrain,ytrain))
 print(svcpoly.score(xtest,ytest))
 
+# 0.317 0.315
 print(svcsig.score(xtrain,ytrain))
 print(svcsig.score(xtest,ytest))
 
